@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Mapbox/Examples/1_DataExplorer/DataExplorer.unity
+- path: Assets/TestScenes/DataVisualization.unity
   isLoaded: 1
   isActive: 1
