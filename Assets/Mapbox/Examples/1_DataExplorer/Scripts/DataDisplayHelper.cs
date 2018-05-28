@@ -18,10 +18,7 @@ namespace Mapbox.Unity
         {
             infoText = GameObject.Find("InfoText").GetComponent<Text>();
             inputFile = gameObject.name;
-            //pointList = CSVReader.Read(inputFile);
-            //List<string> columnList = new List<string>(pointList[0].Keys);
-            //time = columnList[0];
-            //occupancy = columnList[1];
+            
         }
 
         // Update is called once per frame
@@ -30,15 +27,24 @@ namespace Mapbox.Unity
             
         }
 
-        //private void OnMouseUpAsButton()
-        //{
-        //    for (var i = 0; i < 5; i++)
-        //    {
-        //        text += System.Convert.ToString(pointList[i][occupancy]) + "\n";
-        //    }
-        //    infoText.text = text;
+        private void OnMouseUpAsButton()
+        {
+            inputFile = gameObject.name;
+            pointList = CSVReader.Read(inputFile);
+            List<string> columnList = new List<string>(pointList[0].Keys);
+            time = columnList[0];
+            occupancy = columnList[1];
+            foreach(string key in pointList[0].Keys)
+            {
+                Debug.Log(key);
+            }
+            for (var i = 0; i < 50; i++)
+            {
+                text += System.Convert.ToString(pointList[i][occupancy]) + "\n";
+            }
+            infoText.text = text;
 
-        //}
+        }
     }
 
 }

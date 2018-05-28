@@ -31,5 +31,15 @@
         {
             _textMesh.text = text;
         }
+
+        public void HideText()
+        {
+            _textMesh.gameObject.SetActive(false);
+        }
+
+        public void ShowText()
+        {
+            _textMesh.gameObject.SetActive(true);
+        }
 	}
 }

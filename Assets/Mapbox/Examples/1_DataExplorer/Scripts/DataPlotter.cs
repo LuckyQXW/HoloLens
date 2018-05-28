@@ -109,6 +109,8 @@ namespace Mapbox.Unity
                 sphere.name = System.Convert.ToString(pointList[i][blockID]);
                 sphere.transform.parent = GameObject.Find("DataPlotter").transform;
                 sphere.GetComponent<Mapbox.Examples.LabelTextSetter>().SetText(sphere.name);
+                sphere.GetComponent<Mapbox.Examples.LabelTextSetter>().HideText();
+                //sphere.SetActive(false);
             }
         }
 
