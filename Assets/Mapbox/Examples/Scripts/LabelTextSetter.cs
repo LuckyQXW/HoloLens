@@ -26,5 +26,10 @@
 				_textMesh.text = props["type"].ToString();
 			}
 		}
+        
+        public void SetText(string text)
+        {
+            _textMesh.text = text;
+        }
 	}
 }

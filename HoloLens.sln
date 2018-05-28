@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloLens", "HoloLens.csproj", "{2BCECF5C-8B19-D3DB-E144-A19382A694DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloLens.Plugins", "HoloLens.Plugins.csproj", "{9D869119-3F6E-476B-5BF7-9C61E234699E}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloLens.Editor", "HoloLens.Editor.csproj", "{D7970015-796C-23D7-A622-9590452FCB4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloLens.Editor.Plugins", "HoloLens.Editor.Plugins.csproj", "{03543169-9CC2-5F99-C045-D6745142177A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +19,18 @@ Global
 		{2BCECF5C-8B19-D3DB-E144-A19382A694DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BCECF5C-8B19-D3DB-E144-A19382A694DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BCECF5C-8B19-D3DB-E144-A19382A694DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D869119-3F6E-476B-5BF7-9C61E234699E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D869119-3F6E-476B-5BF7-9C61E234699E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D869119-3F6E-476B-5BF7-9C61E234699E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D869119-3F6E-476B-5BF7-9C61E234699E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D7970015-796C-23D7-A622-9590452FCB4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D7970015-796C-23D7-A622-9590452FCB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7970015-796C-23D7-A622-9590452FCB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7970015-796C-23D7-A622-9590452FCB4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03543169-9CC2-5F99-C045-D6745142177A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03543169-9CC2-5F99-C045-D6745142177A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03543169-9CC2-5F99-C045-D6745142177A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03543169-9CC2-5F99-C045-D6745142177A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,6 +5,7 @@ namespace Mapbox.Unity.Location
 	using Mapbox.Unity.Utilities;
 	using Mapbox.Utils;
 	using UnityEngine;
+    using UnityEngine.UI;
 
 	/// <summary>
 	/// The TransformLocationProvider is responsible for providing mock location and heading data
@@ -22,6 +23,8 @@ namespace Mapbox.Unity.Location
 		/// </summary>
 		[SerializeField]
 		Transform _targetTransform;
+
+        public Text locationLabel;
 
 		/// <summary>
 		/// Sets the target transform.
@@ -45,5 +48,10 @@ namespace Mapbox.Unity.Location
 			_currentLocation.IsLocationUpdated = true;
 			_currentLocation.IsHeadingUpdated = true;
 		}
-	}
+
+        private void Update()
+        {
+            locationLabel.text =  _currentLocation.LatitudeLongitude.ToString();
+        }
+    }
 }
