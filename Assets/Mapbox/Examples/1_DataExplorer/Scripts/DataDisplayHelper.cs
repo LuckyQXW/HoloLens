@@ -16,6 +16,7 @@ namespace Mapbox.Unity
         // Use this for initialization
         void Start()
         {
+
             infoText = GameObject.Find("InfoText").GetComponent<Text>();
             inputFile = gameObject.name;
             

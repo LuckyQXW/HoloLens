@@ -21,6 +21,7 @@ public class DataMask : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             gameObject.GetComponent<Mapbox.Examples.LabelTextSetter>().ShowText();
+            Debug.Log("Player in range");
         }
     }
 

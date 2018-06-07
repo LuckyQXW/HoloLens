@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 114584515627220354}
   - component: {fileID: 114904353892283250}
   - component: {fileID: 135857750456167296}
+  - component: {fileID: 114390351375158670}
   m_Layer: 10
   m_Name: CustomMarkerPrefab
   m_TagString: BlockMarker
@@ -119,6 +120,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 218956a5c2a6e42d6a60afccf80b002b, type: 3}
   m_StaticBatchInfo:
@@ -153,6 +155,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -202,6 +205,17 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4292006610
+--- !u!114 &114390351375158670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839187062704024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eddb702c27d06654687cab174c3e7e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114584515627220354
 MonoBehaviour:
   m_ObjectHideFlags: 1
