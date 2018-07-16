@@ -12,6 +12,7 @@ namespace Mapbox.Unity
         public GameObject PointPrefab;
         public GameObject CubePrefab;
         public GameObject CubeHolder;
+        
 
         public int blockIDCol = 0;
         public int longitude1Col = 1;
@@ -66,7 +67,10 @@ namespace Mapbox.Unity
             //}
             //GenerateAllCubes();
             GenerateAllPoints();
+            
+
         }
+    
 
         // Update is called once per frame
         void Update()
@@ -97,6 +101,7 @@ namespace Mapbox.Unity
         //}
 
         void GenerateAllPoints()
+
         {
             for (var i = 0; i < pointList.Count; i++)
             {
@@ -110,9 +115,15 @@ namespace Mapbox.Unity
                 sphere.transform.parent = GameObject.Find("DataPlotter").transform;
                 sphere.GetComponent<Mapbox.Examples.LabelTextSetter>().SetText(sphere.name);
                 sphere.GetComponent<Mapbox.Examples.LabelTextSetter>().HideText();
+
                 //sphere.SetActive(false);
+                sphere.GetComponent<Renderer>().material.color =
+             Color.red;
+
             }
+            
         }
+
 
         void DestroyAllCubes()
         {
