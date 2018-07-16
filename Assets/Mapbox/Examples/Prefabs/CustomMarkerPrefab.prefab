@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 135857750456167296}
   - component: {fileID: 114390351375158670}
   - component: {fileID: 23395011998911880}
+  - component: {fileID: 33164751375974102}
   m_Layer: 10
   m_Name: CustomMarkerPrefab
   m_TagString: BlockMarker
@@ -213,6 +214,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!33 &33164751375974102
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839187062704024}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33886551407168220
 MeshFilter:
   m_ObjectHideFlags: 1

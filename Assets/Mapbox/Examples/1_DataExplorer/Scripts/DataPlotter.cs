@@ -117,6 +117,7 @@ namespace Mapbox.Unity
                 sphere.GetComponent<Mapbox.Examples.LabelTextSetter>().HideText();
 
                 //sphere.SetActive(false);
+                //Changes color of spheres to red
                 sphere.GetComponent<Renderer>().material.color =
              Color.red;
 

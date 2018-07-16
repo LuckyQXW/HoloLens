@@ -18,7 +18,7 @@ public class CSVReader
 
     public static List<Dictionary<string, object>> Read(string file) //Declare method
     {
-        //Debug.Log("CSVReader is reading " + file); // Print filename, make sure parsed correctly
+        Debug.Log("CSVReader is reading " + file); // Print filename, make sure parsed correctly
 
         var list = new List<Dictionary<string, object>>(); //declare dictionary list
 
