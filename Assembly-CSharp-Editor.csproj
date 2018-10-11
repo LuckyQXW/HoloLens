@@ -143,6 +143,8 @@
     <Compile Include="Assets\Mapbox\Unity\Editor\TerrainWithSideWallsFactoryEditor.cs" />
     <Compile Include="Assets\Mapbox\Unity\Editor\VectorSubLayerTreeView.cs" />
     <Compile Include="Assets\MapboxAR\Unity\Ar\Editor\Tests\AverageHeadingAlignmentStrategyTests.cs" />
+    <Compile Include="Assets\RTS_Camera\Scripts\Editor\LayoutHelpers.cs" />
+    <Compile Include="Assets\RTS_Camera\Scripts\Editor\RTS_CameraEditor.cs" />
     <Compile Include="Assets\ThirdPartyAssets\WoLfulus\LineEnding\Editor\Enums.cs" />
     <Compile Include="Assets\ThirdPartyAssets\WoLfulus\LineEnding\Editor\FileMonitor.cs" />
     <Compile Include="Assets\ThirdPartyAssets\WoLfulus\LineEnding\Editor\LogEntries.cs" />

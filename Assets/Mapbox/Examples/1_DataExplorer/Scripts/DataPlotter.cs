@@ -12,6 +12,8 @@ namespace Mapbox.Unity
         public GameObject PointPrefab;
         public GameObject CubePrefab;
         public GameObject CubeHolder;
+       
+        
         
 
         public int blockIDCol = 0;
@@ -68,7 +70,6 @@ namespace Mapbox.Unity
             //GenerateAllCubes();
             GenerateAllPoints();
             
-
         }
     
 
@@ -100,7 +101,7 @@ namespace Mapbox.Unity
         //    }
         //}
 
-        void GenerateAllPoints()
+       public void GenerateAllPoints()
 
         {
             for (var i = 0; i < pointList.Count; i++)
@@ -112,14 +113,22 @@ namespace Mapbox.Unity
                 GameObject sphere = Instantiate(PointPrefab, new Vector3((float)convertedVec.x, 0, (float)convertedVec.y),
                     Quaternion.identity);
                 sphere.name = System.Convert.ToString(pointList[i][blockID]);
+                Debug.Log("GenerateAllPoints: " + sphere.name);
+                if (System.IO.File.Exists(inputfile))
+                {
+                    Debug.Log("good to go " + sphere.name);
+                } else
+                {
+                    Debug.Log ("not good to go" + sphere.name);
+                }
                 sphere.transform.parent = GameObject.Find("DataPlotter").transform;
                 sphere.GetComponent<Mapbox.Examples.LabelTextSetter>().SetText(sphere.name);
                 sphere.GetComponent<Mapbox.Examples.LabelTextSetter>().HideText();
-
+                TextAsset data = Resources.Load(sphere.name) as TextAsset; 
                 //sphere.SetActive(false);
-                //Changes color of spheres to red
-                sphere.GetComponent<Renderer>().material.color =
-             Color.red;
+                sphere.GetComponent<Renderer>().material.color =        
+                    Color.red;                                                                     // Changes color of all spheres to red
+                if (data) sphere.GetComponent<Renderer>().material.color = Color.green;            // Changes colors of spheres with data from red to green
 
             }
             

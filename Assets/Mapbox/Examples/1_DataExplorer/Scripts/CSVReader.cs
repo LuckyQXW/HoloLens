@@ -5,12 +5,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
+
 // Taken from here: https://bravenewmethod.com/2014/09/13/lightweight-csv-reader-for-unity/
 // Comments
 
 // Code parses a CSV, converting values into ints or floats if able, and returning a List<Dictionary<string, object>>.
 
 public class CSVReader
+
 {
     static string SPLIT_RE = @",(?=(?:[^""]*""[^""]*"")*(?![^""]*""))"; // Define delimiters, regular expression craziness
     static string LINE_SPLIT_RE = @"\r\n|\n\r|\n|\r"; // Define line delimiters, regular experession craziness
@@ -18,13 +20,21 @@ public class CSVReader
 
     public static List<Dictionary<string, object>> Read(string file) //Declare method
     {
-        Debug.Log("CSVReader is reading " + file); // Print filename, make sure parsed correctly
+        
+            Debug.Log("CSVReader is reading " + file); // Print filename, make sure parsed correctly
 
         var list = new List<Dictionary<string, object>>(); //declare dictionary list
 
         TextAsset data = Resources.Load(file) as TextAsset; //Loads the TextAsset named in the file argument of the function
-
-        // Debug.Log("Data loaded:" + data); // Print raw data, make sure parsed correctly
+        if(data != null)
+        {
+            Debug.Log("IT EXIST!" + file);
+        }
+        else
+        {
+            Debug.Log("IT DOES NOT EXIST " + file);
+        }
+        //  Debug.Log("Data loaded:" + data); // Print raw data, make sure parsed correctly
 
         var lines = Regex.Split(data.text, LINE_SPLIT_RE); // Split data.text into lines using LINE_SPLIT_RE characters
 
